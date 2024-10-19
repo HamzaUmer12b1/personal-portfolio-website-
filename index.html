@@ -145,7 +145,13 @@
 
     <div class="container mt-5">
       <h2 class="text-center">Student Registration Form</h2>
-      <form id="studentForm" class="needs-validation" novalidate>
+      <form
+        action="send-email.php"
+        class="needs-validation"
+        id="studentForm"
+        validate
+        method="POST"
+      >
         <div class="form-group">
           <label for="fullName">Full Name</label>
           <input
@@ -216,6 +222,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="Email.php"></script>
     <script src="index.js"></script>
   </body>
 </html>
